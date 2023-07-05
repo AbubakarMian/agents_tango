@@ -1,0 +1,47 @@
+section.bg_body_colorsearch {
+    background-color: #cdccd6;
+    height: 100vh;
+}
+.serch_big_img{
+    background-image: url("../../public/images/2.png");
+    height: 66vh;
+}
+
+.ques {
+    float: left;
+    font-weight: bold;
+    margin: 5px;
+    padding: 0px 30px;
+
+}
+.ques_bar {
+    padding: 0px 30px;
+}
+.seemore {
+    float: left;
+    padding: 0px 30px;
+    margin: 10px;
+    font-weight: bold;
+}
+.seemore a {
+    color: #087bbc;
+}
+.serch_big_img {
+    margin-left: 30%;
+    background-repeat: no-repeat;
+
+}
+
+@media only screen and (max-width : 480px) {
+      
+    .serch_big_img {
+        margin-left: 0px;
+        background-position-x: -56px;
+        background-position-y: -67px;
+        height: 50vh;
+    }
+    .login_logo img {
+        width: 200px;
+        margin-top: 42px;
+    }
+}

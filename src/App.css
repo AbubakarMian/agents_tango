@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+  width: 382px !important;
+  font-size: 27px;
+}
+img.collapse_logo {
+  width: 266px;
+  margin: 44px;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: #087bbc !important;
+  color: white !important;
+}
+div#offcanvasNavbar-expand-lg {
+  background-color: #087bbc !important;
+  color: white !important;
+}
+.nav_bottom svg.svg-inline--fa {
+  padding-right: 15px;
+}
+img.nav_brand_logo {
+  width: 41px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.nav_bottom {
+  border-bottom: solid 1px;
+  height: 50px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+@media only screen and (max-width : 480px) {
+  .offcanvas.show:not(.hiding), .offcanvas.showing {
+    width: 290px !important;
+    font-size: 17px;
+  }
+  img.collapse_logo {
+    width: 170px;
+    margin: 40px;
+  }
+}

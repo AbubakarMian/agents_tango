@@ -1,0 +1,42 @@
+.pic_area img {
+    width: 80px;
+    float: right;
+}
+.form_cover_profile {
+    padding: 15px 15px;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    background-color: #f1faff;
+    margin: 33px 5px;
+    box-shadow: 0px 0px 10px 0px gray;
+}
+section.bg_color {
+    background-color: #ffffff;
+    /* background-color: cadetblue; */
+    padding: 10px;
+}
+button.submit_btn.btn.btn-primary {
+    width: 100%;
+    height: 48px;
+    background-color: #087bbc;
+    border: 1px solid #087bbc;
+}
+.pic_area {
+    margin: 10px;
+}
+h3.profile_head {
+    /* text-align: left; */
+    margin: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #087bbc;
+    float: left;
+    margin-top: 26px;
+    margin-left: 20px;
+}
+
+.headinprofile{
+    text-align: left;
+    font-weight: bold;
+    margin: 14px 0px;
+}

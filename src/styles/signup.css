@@ -1,0 +1,80 @@
+button.add_picbtn.btn.btn-primary {
+    font-size: 50px;
+    margin: 10px;
+    border: 1px solid #b56302;
+    border-radius: 97px;
+    width: 100px;
+    background-color: transparent;
+    color: #087bbc;
+    box-shadow: 6px 7px 17px 1px gray;
+    height: 100px;
+    float: right;
+}
+section.bg_clr {
+    background-color: #f1faff;
+}
+h2.headin {
+    text-align: left;
+    font-weight: bold;
+    margin: 14px 0px;
+}
+
+button.add_picbtn.btn.btn-primary:hover {
+    background-color: rgb(172 190 217 / 25%);
+    color: #065989;
+}
+.form_area {
+    text-align: left;
+    font-weight: 600;
+}
+.drop_Area{
+    width: 100%;
+}
+button.loc_btn.btn.btn-primary {
+    width: 100%;
+    text-align: left;
+    background: white;
+    color: black;
+    border: 0px;
+}
+button.sub_btn.btn.btn-primary {
+    width: 100%;
+    height: 48px;
+    margin-bottom: 20px;
+    background-color: #087bbc;
+    border: 1px solid #087bbc;
+}
+button.sub_btn.btn.btn-primary:hover {
+    background-color: #adaaaa;
+}
+.form_cover_signup {
+    padding: 0px 30px;
+}
+svg.svg-inline--fa.fa-location-dot.loc_icon {
+    float: right;
+    margin: 4px;
+}
+h3.signup_head {
+    /* text-align: left; */
+    font-weight: bold;
+    margin: 45px 44px;
+    color: #087bbc;
+    float: left;
+    font-size: 28px;
+}
+.mb-3.mob_num {
+    margin-top: 10px;
+}
+button.backbtnsignup.btn.btn-primary {
+    float: left;
+    background-color: transparent;
+    border-radius: 19px;
+    margin: 4px;
+    border: 0px;
+    color: black;
+}
+.avail.col {
+    text-align: left;
+    font-weight: bold;
+    margin: 10px 0px;
+}

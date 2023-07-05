@@ -1,0 +1,240 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+iframe {
+  display: none;
+}
+
+.accc {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 94vh;
+  background-color: black;
+}
+
+.accc.captured .webcam {
+  opacity: 0.5;
+  transition: opacity 0.1s ease-in;
+}
+
+.accc.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.accc.gallery .gallery-items {
+  width: calc(100% - 80px);
+  max-height: 150px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 20px 0;
+}
+
+.accc.vertical.gallery .gallery-items {
+  height: calc(100vh - 80px);
+  max-height: 180px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.accc.gallery .gallery-items h2 {
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.accc.gallery .images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.accc.gallery .videos {
+  width: calc(100% - 80px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.accc.vertical.gallery .videos {
+  height: calc(100% - 80px);
+  width: 100%;
+}
+
+.accc.gallery .actions {
+  justify-content: space-between;
+}
+
+.accc.gallery .action-webcam {
+  margin: 30px 0 0 0;
+}
+
+.accc.gallery .action-clear {
+  margin: 0 0 30px 0;
+}
+
+.accc.vertical.gallery .action-webcam {
+  margin: 0 0 0 30px;
+}
+
+.accc.vertical.gallery .action-clear {
+  margin: 0 30px 0 0;
+}
+
+.accc.empty span.empty {
+  padding: 0 80px 0 0;
+}
+
+.accc.vertical.empty span.empty {
+  padding: 0 0 80px 0;
+}
+
+.accc .stream {
+  width: calc(100% - 80px);
+  height: 100%;
+}
+
+.accc.vertical .stream {
+  width: 100%;
+  height: calc(100% - 80px);
+}
+
+.accc img {
+  max-width: 26%;
+  margin: 5px;
+  border: 1px solid #448;
+}
+
+.accc video.recorded {
+  max-width: 30%;
+  margin: 5px;
+  border: 1px solid #448;
+}
+
+.accc .recording {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: rgba(255, 50, 50, 0.5);
+  font-size: 14px;
+}
+
+.accc .webcam {
+  width: calc(100% - 80px);
+  height: 100vh;
+  opacity: 1;
+  transition: opacity 0.1s ease-out;
+}
+
+.accc .actions {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 80px;
+  border-left: 2px solid #444;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.accc.vertical .webcam {
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+
+.accc.vertical .actions {
+  right: initial;
+  top: initial;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  border-left: 0;
+  border-top: 2px solid #444;
+  flex-direction: row;
+}
+
+.accc button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: black;
+}
+
+.accc button:focus {
+  outline: 0;
+}
+
+button.action-gallery {
+  border-radius: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 34px;
+  height: 34px;
+}
+
+button.action-gallery > div {
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  background-color: #eee;
+}
+
+button.action-photo > div,
+button.action-start-video > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+button.action-stop-video > div {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background-color: #f44;
+  transition: border-radius 1s, width 0.25s;
+}
+
+button.action-photo {
+  border: 2px solid #eee;
+}
+
+button.action-start-video,
+button.action-stop-video {
+  border: 2px solid #f44;
+}
+
+button.action-stop-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.action-webcam,
+button.action-clear {
+  border-radius: 0;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

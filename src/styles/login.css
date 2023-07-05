@@ -1,0 +1,83 @@
+.bg_img{
+    /* background-image: url("../../public/images/Reelsclub-34.jpg"); */
+    height: 100vh;
+    background-repeat: round;
+}
+label.labl.form-label {
+    float: left;
+    color: black;
+
+}
+.login_logo1 img {
+    width: 295px;
+}
+.login_logo img {
+    width: 260px;
+}
+button.login_btn.btn.btn-primary {
+    width: 174px;
+    height: 42px;
+    font-weight: bold;
+    background-color: #087bbc;
+    float: right;
+}
+.remember {
+    color: black;
+    float: left;
+    margin-top: 37px;
+}
+.forget {
+    color: black;
+    float: left;
+    margin-left: 30px;
+    margin-top: 8px;
+}
+hr.line {
+    color: black;
+    margin: 30px;
+    padding: 10px;
+    width: 95%;
+}
+.new_Acc{
+    color: black;
+    margin-bottom: 20px;
+    font-size: 20px;
+    }
+    button.skip_btn.btn.btn-primary {
+        float: right;
+        margin-top: 20px;
+        height: 38px;
+        /* margin-bottom: 17px; */
+        background-color: gray;
+        color: white;
+        border-radius: 31px;
+        border: solid 1px white;
+    }
+    .login_area {
+        padding: 0px 30px;
+    }
+    .signup_area {
+        padding: 0px 30px;
+    }
+    .language_area {
+        padding: 10px;
+        text-align: left;
+    }
+    .skip_area {
+        padding: 0px 30px;
+    }
+    .remember.form-check {
+        margin-bottom: 8px;
+    }
+    @media only screen and (max-width : 480px) {
+      
+        button.login_btn.btn.btn-primary {
+            width: 100%;
+        }
+        hr.line {
+            width: 332px;
+        }
+        .login_logo1 img {
+            margin-top: 20px;        }
+    }
+    
