@@ -54,6 +54,15 @@ export default function Chat() {
                     date={new Date()}
                     unread={0}
                 />
+                <ChatItem
+                    avatar={"./images/driver.png"}
+                    alt={'Reactjs'}
+                    title={'Facebook'}
+                    subtitle={'What are you doing?'}
+                    date={new Date()}
+                    unread={0}
+                />
+
 
                 {/* </Row> */}
                 <Input
