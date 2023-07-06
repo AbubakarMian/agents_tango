@@ -38,7 +38,6 @@ export default function LogIn() {
         <section className="bg_img">
 
             <Container fluid>
-                <div className="language_area"><LanguageToggle /></div>
 
                 <Row>
                     <div>
@@ -142,40 +141,6 @@ const Login_form = () => {
     );
 }
 
-
-const LanguageToggle = () => {
-
-    const [checked, setChecked] = useState(false);
-    const [radioValue, setRadioValue] = useState('1');
-
-    const radios = [
-        { name: 'English', value: '1' },
-        { name: 'Russian', value: '2' },
-    ];
-    const radio = { name: 'Russian', value: '1' };
-    const idx = 1;
-
-    return (
-        <>
-            <ButtonGroup>
-                {radios.map((radio, idx) => (
-                    <ToggleButton
-                        key={idx}
-                        id={`radio-${idx}`}
-                        type="radio"
-                        variant={idx % 2 ? 'outline-success' : 'outline-danger'}
-                        name="radio"
-                        value={radio.value}
-                        checked={radioValue === radio.value}
-                        onChange={(e) => setRadioValue(e.currentTarget.value)}
-                    >
-                        {radio.name}
-                    </ToggleButton>
-                ))}
-            </ButtonGroup>
-        </>
-    );
-}
 
 
 

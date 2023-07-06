@@ -38,7 +38,6 @@ export default function Profile() {
             <Nav_bar_area />
             
         <section className="bg_color">
-        <div className="language_area"><LanguageToggle /></div>
 
             
             <h3 className="profile_head">Profile</h3>
@@ -149,42 +148,6 @@ export default function Profile() {
         </section>
         </div>
 
-    );
-}
-
-
-const LanguageToggle = () => {
-
-    const [checked, setChecked] = useState(false);
-    const [radioValue, setRadioValue] = useState('1');
-
-    const radios = [
-        { name: 'English', value: '1' },
-        { name: 'Russian', value: '2' },
-    ];
-    const radio = { name: 'Russian', value: '1' };
-    const idx = 1;
-
-    return (
-        <>
-            <ButtonGroup>
-                {radios.map((radio, idx) => (
-                    <ToggleButton
-                    className="tbtn"
-                        key={idx}
-                        id={`radio-${idx}`}
-                        type="radio"
-                        variant={idx % 2 ? 'outline-success' : 'outline-success'}
-                        name="radio"
-                        value={radio.value}
-                        checked={radioValue === radio.value}
-                        onChange={(e) => setRadioValue(e.currentTarget.value)}
-                    >
-                        {radio.name}
-                    </ToggleButton>
-                ))}
-            </ButtonGroup>
-        </>
     );
 }
 
