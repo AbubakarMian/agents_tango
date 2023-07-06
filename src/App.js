@@ -34,6 +34,7 @@ import MyReels from './components/MyReels';
 import SignUp from './components/SignUp';
 import Map from './components/Map';
 import Profile from './components/Profile';
+import Chat from './components/Chat';
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
       <Router>
         {/* <Nav_bar_area /> */}
         <Routes>
+        <Route Component={Chat} path='chat'></Route>
         <Route Component={Profile} path='profile'></Route>
         <Route Component={Map} path='map'></Route>
         <Route Component={SignUp} path='signup'></Route>
