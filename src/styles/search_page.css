@@ -5,10 +5,7 @@ section.bg_body_colorsearch {
     background-position-y: -387px;
     background-repeat: no-repeat;
 }
-.serch_big_img{
-    background-image: url("../../public/images/a.jpg");
-    height: 66vh;
-}
+
 
 .ques {
     float: left;
