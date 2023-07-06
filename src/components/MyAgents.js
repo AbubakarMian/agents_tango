@@ -36,7 +36,7 @@ export default function Reels_page_export() {
         
         <Row className="reel_box">
           <Col>
-            <div className="img_area" onClick={() => { navigate('/reelvideo') }}>
+            <div className="img_area" onClick={() => { navigate('/') }}>
               <img src="./images/profile.png" />
 
             </div>
@@ -61,14 +61,14 @@ export default function Reels_page_export() {
               </p>
             </div>
             <div className="flx">
-            <Button className="chatbtn_double">Chat</Button>
-            <Button className="chatbtn_double">Deals</Button>
+            <Button className="chatbtn_double" onClick={() => { navigate('/chat') }}>Chat</Button>
+            <Button className="chatbtn_double" onClick={() => { navigate('/deals') }}>Deals</Button>
             </div>
                       </Col>
         </Row>
         <Row className="reel_box">
           <Col>
-            <div className="img_area" onClick={() => { navigate('/reelvideo') }}>
+            <div className="img_area" onClick={() => { navigate('/') }}>
               <img src="./images/profile2.png" />
             </div>
           </Col>
@@ -92,14 +92,14 @@ export default function Reels_page_export() {
               </p>
             </div>
             <div className="flx">
-            <Button className="chatbtn_double">Chat</Button>
-            <Button className="chatbtn_double">Deals</Button>
+            <Button className="chatbtn_double" onClick={() => { navigate('/chat') }}>Chat</Button>
+            <Button className="chatbtn_double" onClick={() => { navigate('/deals') }}>Deals</Button>
             </div>
                       </Col>
         </Row>
         <Row className="reel_box">
           <Col>
-            <div className="img_area" onClick={() => { navigate('/reelvideo') }}>
+            <div className="img_area" onClick={() => { navigate('/') }}>
               <img src="./images/profile3.png" />
             </div>
           </Col>
@@ -124,15 +124,15 @@ export default function Reels_page_export() {
               </p>
             </div>
             <div className="flx">
-            <Button className="chatbtn_double">Chat</Button>
-            <Button className="chatbtn_double">Deals</Button>
+            <Button className="chatbtn_double" onClick={() => { navigate('/chat') }}>Chat</Button>
+            <Button className="chatbtn_double" onClick={() => { navigate('/deals') }}>Deals</Button>
             </div>
                       </Col>
         </Row>
 
         <Row className="reel_box">
           <Col>
-            <div className="img_area" onClick={() => { navigate('/reelvideo') }}>
+            <div className="img_area" onClick={() => { navigate('/') }}>
               <img src="./images/profile4.png" />
             </div>
           </Col>
@@ -156,8 +156,8 @@ export default function Reels_page_export() {
               </p>
             </div>
             <div className="flx">
-            <Button className="chatbtn_double">Chat</Button>
-            <Button className="chatbtn_double">Deals</Button>
+            <Button className="chatbtn_double" onClick={() => { navigate('/chat') }}>Chat</Button>
+            <Button className="chatbtn_double" onClick={() => { navigate('/deals') }}>Deals</Button>
             </div>
           </Col>
         </Row>

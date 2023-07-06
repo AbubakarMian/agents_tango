@@ -6,8 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import "./../styles/agentlist.css";
-import "./../styles/video-react.css";
+
 import "./../styles/chat.css";
 import Carousel from "react-bootstrap/Carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -47,7 +46,7 @@ export default function Chat() {
             <div className="topscreen_hed">Chat</div>
           </Col> */}
                 <ChatItem
-                    avatar={"./images/driver.png"}
+                    avatar={"./images/profile.png"}
                     alt={'Reactjs'}
                     title={'Facebook'}
                     subtitle={'What are you doing?'}
@@ -65,14 +64,17 @@ export default function Chat() {
 
 
                 {/* </Row> */}
+                <div className="txt-box">
                 <Input
                     referance={inputReferance}
                     placeholder='Type here...'
                     // multiline={true}
+                    type="text"
                     value={""}
-                    rightButtons={<Button className="btn-chat-custom" text='Send' />
+                    className="inpu_box"
+                    rightButtons={<Button className="btn-chat-custom" text='Send' >Send</Button>
                 }
-                />
+                /></div>
 
                 {/* ;<Input clear={clear => (inputClear = clear)} placeholder='Type here...' /> */}
 

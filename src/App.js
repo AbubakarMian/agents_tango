@@ -9,7 +9,6 @@ import Landing_page from './components/Landing_page';
 import Login from './components/Login';
 import Search_page from './components/Search_page';
 import AgentList from './components/AgentList';
-import MyReels from './components/MyReels';
 import SignUp from './components/SignUp';
 import Profile from './components/Profile';
 import Chat from './components/Chat';
@@ -28,7 +27,6 @@ function App() {
         <Route Component={Chat} path='chat'></Route>
         <Route Component={Profile} path='profile'></Route>
         <Route Component={SignUp} path='signup'></Route>
-        <Route Component={MyReels} path='myreels'></Route>
         <Route Component={AgentList} path='agentlist'></Route>
         {/* <Route Component={Home} path='home'></Route> */}
         <Route Component={Search_page} path='search'></Route>

@@ -4,3 +4,13 @@
     border-radius: 10px;
     height: 10%;
 }
+.rce-container-input.inpu_box {
+    border: solid 1px #2384ba;
+    background-color: #f1faff;
+}
+
+.txt-box {
+    position: absolute;
+    width: 88%;
+    bottom: 0px;
+}

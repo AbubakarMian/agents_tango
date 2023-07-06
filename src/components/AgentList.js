@@ -29,7 +29,7 @@ export default function Reels_page_export() {
         
         <Row className="reel_box">
           <Col>
-            <div className="img_area" onClick={() => { navigate('/reelvideo') }}>
+            <div className="img_area" onClick={() => { navigate('/chat') }}>
               <img src="./images/profile.png" />
 
             </div>
@@ -53,12 +53,12 @@ export default function Reels_page_export() {
                 One Agency - Orange.
               </p>
             </div>
-            <Button className="chatbtn">Chat</Button>
+            <Button className="chatbtn" onClick={() => { navigate('/chat') }}>Chat</Button>
           </Col>
         </Row>
         <Row className="reel_box">
           <Col>
-            <div className="img_area" onClick={() => { navigate('/reelvideo') }}>
+            <div className="img_area" onClick={() => { navigate('/chat') }}>
               <img src="./images/profile2.png" />
             </div>
           </Col>
@@ -81,12 +81,12 @@ export default function Reels_page_export() {
                 One Agency - Orange.
               </p>
             </div>
-            <Button className="chatbtn">Chat</Button>
+            <Button className="chatbtn" onClick={() => { navigate('/chat') }} >Chat</Button>
           </Col>
         </Row>
         <Row className="reel_box">
           <Col>
-            <div className="img_area" onClick={() => { navigate('/reelvideo') }}>
+            <div className="img_area" onClick={() => { navigate('/chat') }}>
               <img src="./images/profile3.png" />
             </div>
           </Col>
@@ -110,13 +110,13 @@ export default function Reels_page_export() {
                 One Agency - Orange.
               </p>
             </div>
-            <Button className="chatbtn">Chat</Button>
+            <Button className="chatbtn" onClick={() => { navigate('/chat') }}>Chat</Button>
           </Col>
         </Row>
 
         <Row className="reel_box">
           <Col>
-            <div className="img_area" onClick={() => { navigate('/reelvideo') }}>
+            <div className="img_area" onClick={() => { navigate('/chat') }}>
               <img src="./images/profile4.png" />
             </div>
           </Col>
@@ -139,7 +139,7 @@ export default function Reels_page_export() {
                 One Agency - Orange.
               </p>
             </div>
-            <Button className="chatbtn">Chat</Button>
+            <Button className="chatbtn" onClick={() => { navigate('/chat') }}>Chat</Button>
           </Col>
         </Row>
       </Container>

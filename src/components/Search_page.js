@@ -56,7 +56,7 @@ export default function Search_Page() {
                                     aria-label="Large"
                                     aria-describedby="inputGroup-sizing-sm"
                                 />
-                            <Button  onClick={()=>navigateToPath('/categories')}  className="" variant="primary">GO</Button>
+                            <Button  onClick={()=>navigateToPath('/agentlist')}  className="" variant="primary">GO</Button>
 
                             </InputGroup>
 
@@ -79,7 +79,7 @@ export default function Search_Page() {
 
                 </Row>
                 <Row>
-                <Col xsm><div className="serch_big_img"> </div></Col>
+                {/* <Col xsm><div className="serch_big_img"> </div></Col> */}
 
                 
                     

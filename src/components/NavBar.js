@@ -53,7 +53,6 @@ export default function Nav_bar_area() {
                       <div className='nav_bottom'><Nav.Link href="landing"><FontAwesomeIcon icon={faUsers} /> Landing</Nav.Link></div>
                       <div className='nav_bottom'><Nav.Link href="search"><FontAwesomeIcon icon={faMagnifyingGlass} /> Search</Nav.Link></div>
                       <div className='nav_bottom'><Nav.Link href="AgentList"><FontAwesomeIcon icon={faList} /> Agent List</Nav.Link></div>
-                      <div className='nav_bottom'><Nav.Link href="myreels"><FontAwesomeIcon icon={faFilm} /> My Reels</Nav.Link></div>
                       <div className='nav_bottom'><Nav.Link href="signup"><FontAwesomeIcon icon={faUserPlus} /> Sign Up</Nav.Link></div>
                       <div className='nav_bottom'><Nav.Link href="profile"><FontAwesomeIcon icon={faUsers} /> Profile</Nav.Link></div>
                       <div className='nav_bottom'><Nav.Link href="chat"><FontAwesomeIcon icon={faMessage} /> Chat</Nav.Link></div>
