@@ -16,14 +16,19 @@ import Collapse from "react-bootstrap/Collapse";
 import InputGroup from "react-bootstrap/InputGroup";
 import { useNavigate } from "react-router-dom";
 import { Player } from "video-react";
-import Nav_bar_area from './NavBar';
+import Nav_bar_area from "./NavBar";
 
-export default function Reels_page_export() {
+export default function Reels_page_export(props) {
   const navigate = useNavigate();
 
   const navigateToPath = (path) => {
     navigate(path);
   };
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <section className="">
       <Nav_bar_area />
@@ -39,10 +44,14 @@ export default function Reels_page_export() {
 
         <Row className="reel_box_deal">
           <Col>
-            <div className="img_area" onClick={() => { navigate('/reelvideo') }}>
+            <div
+              className="img_area"
+              onClick={() => {
+                navigate("/reelvideo");
+              }}
+            >
               <img src="./images/5.jpg" />
-              <p className="sign">DocuSign</p>   
-
+              <p className="sign">DocuSign</p>
             </div>
           </Col>
           <Col>
@@ -50,87 +59,151 @@ export default function Reels_page_export() {
               <p>
                 <b>Moonta Bay</b>
               </p>
-             
-              <p className="">
-               <b>$698,000</b>
 
+              <p className="">
+                <b>$698,000</b>
               </p>
-              <p className="info_box_text">
-              60 Moonta Road, Moonta Bay
-              </p>
-              <p className="info_box_text">
-              Bed 4 Bath 1105m2
-              </p>
+              <p className="info_box_text">60 Moonta Road, Moonta Bay</p>
+              <p className="info_box_text">Bed 4 Bath 1105m2</p>
             </div>
-            
-              <Button className="chatbtn_double">View</Button>
+
+            <Button className="chatbtn_double">View</Button>
           </Col>
         </Row>
         <Row className="reel_box_deal">
           <Col>
-            <div className="img_area" onClick={() => { navigate('/reelvideo') }}>
+            <div
+              className="img_area"
+              onClick={() => {
+                navigate("/reelvideo");
+              }}
+            >
               <img src="./images/6.jpg" />
-              <p className="sign">DocuSign</p>   
-
+              <p className="sign">DocuSign</p>
             </div>
           </Col>
           <Col>
-          <div className="info_area">
+            <div className="info_area">
               <p>
                 <b>Beveridge</b>
               </p>
-             
-              <p className="">
-               <b>$124,000</b>
 
+              <p className="">
+                <b>$124,000</b>
               </p>
-              <p className="info_box_text">
-              9 Numbat Drive, Beveridge
-              </p>
-              <p className="info_box_text">
-              4 Bed 2 Bath 362m2
-              </p>
+              <p className="info_box_text">9 Numbat Drive, Beveridge</p>
+              <p className="info_box_text">4 Bed 2 Bath 362m2</p>
             </div>
-              <Button className="chatbtn_double">View</Button>
+            <Button className="chatbtn_double">View</Button>
           </Col>
         </Row>
         <Row className="reel_box_deal">
           <Col>
-            <div className="img_area" onClick={() => { navigate('/reelvideo') }}>
+            <div
+              className="img_area"
+              onClick={() => {
+                navigate("/reelvideo");
+              }}
+            >
               <img src="./images/7.jpg" />
-              <p className="sign">DocuSign</p>   
-
+              <p className="sign">DocuSign</p>
             </div>
           </Col>
           <Col>
-          <div className="info_area">
+            <div className="info_area">
               <p>
                 <b>Capel Sound</b>
               </p>
-             
-              <p className="">
-               <b>$102,000</b>
 
+              <p className="">
+                <b>$102,000</b>
               </p>
               <p className="info_box_text">
-              2/22 Chatfield Avenue, Capel Sound
+                2/22 Chatfield Avenue, Capel Sound
               </p>
-              <p className="info_box_text">
-              3 Bed 2 Bath 310m2
-              </p>
+              <p className="info_box_text">3 Bed 2 Bath 310m2</p>
             </div>
-            
-              <Button className="chatbtn_double">View</Button>
+
+            <Button className="chatbtn_double">View</Button>
           </Col>
         </Row>
 
         <Row className="">
           <Col>
-           
-              <Button className="create_btn">CREATE NEW</Button>
+            <Button className="create_btn" onClick={handleShow}>
+              CREATE NEW
+            </Button>
+            <div className="modal_plac">
+              <Modal
+                show={show}
+                onHide={handleClose}
+                {...props}
+                size="lg"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered
+              >
+                <Modal.Header closeButton>
+                  <Modal.Title>Select Type</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <p> What kind of deal you want to make?</p>
+                  <div className="buttons_area">
+
+
+
+
+
+                    {/* <Button className="modal_btn"> Hire</Button> */}
+                    <Button className="modal_btn"> Hire</Button>
+
+
+
+                    
+
+                    <Button className="modal_btn"> collaboration</Button>
+                  </div>
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Close
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+            </div>
           </Col>
         </Row>
       </Container>
     </section>
   );
 }
+
+const CreateHireModal = (props) => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  <>
+      <Button variant="primary" onClick={handleShow}>
+        Launch demo modal
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
+};
+// const CreateDealModal = () => {
+
+// }

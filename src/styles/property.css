@@ -1,0 +1,35 @@
+.bg_color_property {
+    padding: 15px 15px;
+    /* border: 1px solid #e7e7e7; */
+    border-radius: 10px;
+    background-color: #f1faff;
+    /* margin: 33px 15px; */
+    /* box-shadow: 0px 0px 10px 0px gray; */
+}
+
+.main_head {
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    background-color: #e0d9d9;
+    box-shadow: 0px 0px 10px 0px gray;
+    padding: 5px 1px;
+    margin: 12px 0px;
+}
+.main_head h4 {
+    margin: 0px;
+}
+button.save_btn_prp.btn.btn-primary {
+    width: 100%;
+    margin: 15px 0px;
+    background-color: #007dbc;
+}
+
+.add_head h4 {
+    color: #007dbc;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+}
+.add_head {
+    margin: 31px 0px;
+}
