@@ -1,0 +1,29 @@
+.head_title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 52px;
+    text-align: left;
+}
+.head_cover {
+    background-color: #b9b6b6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.box_cover {
+    border: solid 1px #b9b6b6;
+    
+    padding: 10px 14px;
+}
+.deal_head {
+    font-size: 23px;
+    font-weight: bold;
+    color: gray;
+    margin: 15px 0px;
+}
+button.prp_btn.btn.btn-primary {
+    float: right;
+    width: 100px;
+    margin-left: 16px;
+    background-color: gray;
+    border: gray;
+}
