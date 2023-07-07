@@ -59,6 +59,7 @@ export default function Nav_bar_area() {
                       <div className='nav_bottom'><Nav.Link href="myagents"><FontAwesomeIcon icon={faPersonMilitaryToPerson} />My Agents</Nav.Link></div>
                       <div className='nav_bottom'><Nav.Link href="deals"><FontAwesomeIcon icon={faPersonMilitaryToPerson} />Deals</Nav.Link></div>
                       <div className='nav_bottom'><Nav.Link href="property"><FontAwesomeIcon icon={faPersonMilitaryToPerson} />Property</Nav.Link></div>
+                      <div className='nav_bottom'><Nav.Link href="adddeal"><FontAwesomeIcon icon={faPersonMilitaryToPerson} />Add Deal</Nav.Link></div>
                     
                       {/* <NavDropdown
       

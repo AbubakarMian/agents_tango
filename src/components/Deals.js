@@ -148,19 +148,12 @@ export default function Reels_page_export(props) {
                 <Modal.Body>
                   <p> What kind of deal you want to make?</p>
                   <div className="buttons_area">
-
-
-
-
-
                     {/* <Button className="modal_btn"> Hire</Button> */}
-                    <Button className="modal_btn"> Hire</Button>
 
+                    <CreateHireModal />
 
-
-                    
-
-                    <Button className="modal_btn"> collaboration</Button>
+                    {/* <Button className="modal_btn"> collaboration</Button> */}
+                    <CreateCollaborationModal />
                   </div>
                 </Modal.Body>
                 <Modal.Footer>
@@ -177,33 +170,53 @@ export default function Reels_page_export(props) {
   );
 }
 
-const CreateHireModal = (props) => {
+const CreateHireModal = () => {
   const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+  return (
+    <>
+      <Button className="modal_btn" onClick={() => setShow(true)}>
+        {" "}
+        Hire
       </Button>
-
-      <Modal show={show} onHide={handleClose}>
+      <Modal
+        show={show}
+        onHide={() => setShow(false)}
+        dialogClassName="modal-90w"
+        aria-labelledby="example-custom-modal-styling-title"
+      >
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title id="example-custom-modal-styling-title">
+            Hire{" "}
+          </Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
+        <Modal.Body>Hire</Modal.Body>
       </Modal>
     </>
+  );
 };
-// const CreateDealModal = () => {
 
-// }
+const CreateCollaborationModal = () => {
+  const [show, setShow] = useState(false);
+  return (
+    <>
+      <Button className="modal_btn" onClick={() => setShow(true)}>
+        {" "}
+        collaboration
+      </Button>
+      <Modal
+        show={show}
+        onHide={() => setShow(false)}
+        dialogClassName="modal-90w"
+        aria-labelledby="example-custom-modal-styling-title"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="example-custom-modal-styling-title">
+collaboration          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        collaboration
+        </Modal.Body>
+      </Modal>
+    </>
+  );
+};

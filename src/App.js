@@ -15,6 +15,7 @@ import Chat from './components/Chat';
 import MyAgents from './components/MyAgents';
 import Deals from './components/Deals';
 import Property from './components/Property';
+import AddDeal from './components/AddDeal';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       {/* <Router basename='/reelsproclub/build'> */}
       <Router>
         <Routes>
+        <Route Component={AddDeal} path='adddeal'></Route>
         <Route Component={Property} path='property'></Route>
         <Route Component={Deals} path='deals'></Route>
         <Route Component={MyAgents} path='myagents'></Route>
