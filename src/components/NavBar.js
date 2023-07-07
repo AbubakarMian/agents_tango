@@ -56,8 +56,9 @@ export default function Nav_bar_area() {
                       <div className='nav_bottom'><Nav.Link href="signup"><FontAwesomeIcon icon={faUserPlus} /> Sign Up</Nav.Link></div>
                       <div className='nav_bottom'><Nav.Link href="profile"><FontAwesomeIcon icon={faUsers} /> Profile</Nav.Link></div>
                       <div className='nav_bottom'><Nav.Link href="chat"><FontAwesomeIcon icon={faMessage} /> Chat</Nav.Link></div>
-                      <div className='nav_bottom'><Nav.Link href="myagents"><FontAwesomeIcon icon={faPersonMilitaryToPerson} /> My Agents</Nav.Link></div>
-                      <div className='nav_bottom'><Nav.Link href="deals"><FontAwesomeIcon icon={faPersonMilitaryToPerson} /> Deals</Nav.Link></div>
+                      <div className='nav_bottom'><Nav.Link href="myagents"><FontAwesomeIcon icon={faPersonMilitaryToPerson} />My Agents</Nav.Link></div>
+                      <div className='nav_bottom'><Nav.Link href="deals"><FontAwesomeIcon icon={faPersonMilitaryToPerson} />Deals</Nav.Link></div>
+                      <div className='nav_bottom'><Nav.Link href="property"><FontAwesomeIcon icon={faPersonMilitaryToPerson} />Property</Nav.Link></div>
                     
                       {/* <NavDropdown
       

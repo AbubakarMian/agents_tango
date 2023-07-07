@@ -14,14 +14,15 @@ import Profile from './components/Profile';
 import Chat from './components/Chat';
 import MyAgents from './components/MyAgents';
 import Deals from './components/Deals';
+import Property from './components/Property';
 
 function App() {
   return (
     <div className="App">
       {/* <Router basename='/reelsproclub/build'> */}
       <Router>
-        {/* <Nav_bar_area /> */}
         <Routes>
+        <Route Component={Property} path='property'></Route>
         <Route Component={Deals} path='deals'></Route>
         <Route Component={MyAgents} path='myagents'></Route>
         <Route Component={Chat} path='chat'></Route>
