@@ -161,7 +161,7 @@ export default function Profile() {
               </Row>
               <Row>
                 <Col>
-                  <Button className="save_btn_prp">Save</Button>
+                  <Button className="save_btn_prp"  onClick={() => navigate(-1)}>Save</Button>
                 </Col>
               </Row>
             </div>
