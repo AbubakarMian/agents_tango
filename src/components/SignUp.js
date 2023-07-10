@@ -120,23 +120,23 @@ export default function Signup() {
                                     <Form>
                                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                             <Form.Label>Password*</Form.Label>
-                                            <Form.Control type="password" placeholder="Enter Password" />
+                                            <Form.Control type="password" placeholder="Password" />
                                         </Form.Group>
 
                                     </Form>
                                 </div>
                             </Col>
-                            <Col>
+                            {/* <Col>
                                 <div className="form_area">
                                     <Form>
                                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                            <Form.Label>Confirm Password*</Form.Label>
-                                            <Form.Control type="password" placeholder="ReEnter Password" />
+                                            <Form.Label>ReEnter*</Form.Label>
+                                            <Form.Control type="password" placeholder="Password" />
                                         </Form.Group>
 
                                     </Form>
                                 </div>
-                            </Col>
+                            </Col> */}
                         </Row>
 
                         <Row>
